@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head th:replace="~{_fragments::head(title=~{null}, author=~{null}, keywords=~{null}, desc=~{null})}"></head>
+  <body>
+    <div class="cover">
+      <!-- NAV -->
+      <nav th:replace="~{_fragments::navbar}"></nav>
+
+
+      <span th:text="${other_post}"></span>
+        <!-- ARTICLES -->
+      <div class="container"> 
+        <header class="pb-1rem">
+          <h1 class="large">Insights and Inspiration: Exploring the World Through Words</h1>
+          <h3>We Believe that Words have the Power to Transform Lives, and we're Committed to Bringing you the Very Best of what the Written Word has to Offer.
+            So, Join us Today and Let's Embark on a Journey of Discovery and Inspiration Together!"</h3>
+        </header>
+
+        <section class="latest">
+          <div class="grid-2">
+            <div th:each="post: ${posts}" th:insert="~{_fragments::blog_card(post=~{post})}"></div>
+          </div>
+          <h1></h1>
+        </section>
+        <section class="blogs"></section>
+      </div>
+    </div>
+
+    <div th:insert="~{_fragments::footer_script}"></div>
+  </body>
+</html>
+

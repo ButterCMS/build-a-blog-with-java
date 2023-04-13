@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head th:replace="~{_fragments::head(title=~{null}, author=~{null}, keywords=~{null}, desc=~{null})}"></head>
+  <body>
+    <div class="cover container">
+      <!-- NAV -->
+      <nav th:replace="~{_fragments::navbar}"></nav>
+
+      <!-- HEADER -->
+      <header>
+        <div class="header-wrapper">
+          <h6>About Us</h6>
+          <h1>Get to Know About Me!!</h1>
+        </div>
+      </header>
+      <article class="about-wrapper"> 
+        <p>
+          Pellentesque sit amet mauris purus. Mauris egestas molestie ex vel
+          gravida. Nam sem erat, tempor quis porttitor vitae, porttitor nec
+          metus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos. Mauris ultricies nisi bibendum nulla
+          euismod, nec pharetra lacus lobortis. Integer vitae lacus in leo
+          sagittis rutrum sit amet nec quam. Nullam sed diam et lectus
+          molestie tempor hendrerit in risus. Duis risus urna, imperdiet
+          condimentum neque vitae, elementum viverra odio. Nulla euismod
+          ornare luctus. Phasellus suscipit consectetur placerat. Suspendisse
+          quis mi ornare sapien porttitor pharetra at non metus. Sed ac
+          posuere augue, eu dictum nisi. Vestibulum iaculis congue risus, eget
+          dignissim justo euismod non.
+        </p>
+      </article>
+    </div>
+    <div th:insert="~{_fragments::footer_script}"></div>
+  </body>
+</html>
+
