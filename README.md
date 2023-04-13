@@ -4,7 +4,7 @@
 > **tag** build-a-blog-with-java
 
 
-** Title:** How to Add a Plug &amp; Play Blog to Your Java App Using ButterCMS
+**Title:** How to Add a Plug &amp; Play Blog to Your Java App Using ButterCMS
 
 This article explains the steps required to seting up your very own Blog site using ButterCMS and Java (Spring Boot).
 
